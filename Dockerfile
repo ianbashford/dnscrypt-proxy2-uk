@@ -1,5 +1,5 @@
 FROM alpine:edge
-RUN apk update && apk search dnscrypt && apk --no-cache add ca-certificates dnscrypt-proxy
+RUN apk update && apk --no-cache add ca-certificates dnscrypt-proxy
 ADD config /config
 EXPOSE 53/udp
 
